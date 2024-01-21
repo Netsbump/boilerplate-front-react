@@ -120,8 +120,6 @@ Voici une explication succincte de chaque fichier généré par Vite dans ce pro
 
   7.  **optimizeDeps**: Nous pouvons définir des options pour optimiser les dépendances de notre projet.
 
-Afin de pallier aux problèmes de CORS durant la phase de développement, j'ai configuré le projet pour qu'il s'exécute sur le port `8445`. Par conséquent, il a été nécessaire de mettre à jour les paramètres d'`IdentityServer` dans le fichier `appsettings` pour autoriser les appels depuis ce port. Un ajustement similaire a été effectué dans l'appsettings de la solution "Planning".
-
 - `package.json`: Le fichier package.json est un fichier central dans tout projet Node.js et JavaScript. Dans notre projet, il remplit plusieurs fonctions clés :
 
   1.  **Métadonnées du projet** : Il contient des informations de base sur notre projet, telles que le nom, la version, la description, et l'auteur.
@@ -399,14 +397,12 @@ _A venir_
 
 ## Commit
 
-Lorsque vous contribuez au projet et que vous préparez vos commits pour le dépôt SVN, veillez à respecter les consignes suivantes pour maintenir la propreté et la cohérence du code :
+Lorsque vous contribuez au projet et que vous préparez vos commits pour le dépôt GitHub, veillez à respecter les consignes suivantes pour maintenir la propreté et la cohérence du code :
 
 - le dossier `.vscode` ainsi que le fichier `.vscode/settings.json.`
   Ces éléments sont propres à votre environnement de développement et ne devraient pas être partagés avec d'autres développeurs.
 - le dossier `node_modules`
   Ce dossier contient toutes les dépendances du projet, et il est volumineux. De plus, chaque développeur peut regénérer ce dossier en exécutant npm install sur sa machine locale.
-- le fichier `.gitignore`
-  Bien que ce fichier soit couramment utilisé dans les projets Git pour ignorer certains fichiers ou dossiers, il n'est pas pertinent pour un dépôt SVN et pourrait prêter à confusion.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
